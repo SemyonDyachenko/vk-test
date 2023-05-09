@@ -1,0 +1,111 @@
+$primaryColor: #ffcd58;
+$grayColor: #374151;
+$redColor: #ea5858;
+
+.formContainer {
+  max-width: 1000px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.formContainer > form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.formContainer h2 {
+  font-size: 24px;
+  text-align: center;
+  color: $grayColor;
+}
+
+.formElement {
+  width: 400px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin: 2px 0px;
+
+  label {
+    color: $grayColor;
+    font-size: 17px;
+    padding: 5px 0px;
+    font-weight: 300;
+  }
+
+  input,
+  select,
+  textarea {
+    padding: 5px 10px;
+    height: 40px;
+    background-color: $primaryColor;
+    border-radius: 8px;
+    color: $grayColor;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    outline: none;
+  }
+  input,
+  textarea {
+    border: none;
+  }
+
+  textarea {
+    padding-top: 5px;
+  }
+
+  select {
+    border: none;
+    border-right: 8px solid $primaryColor;
+  }
+}
+
+.formTime {
+  display: flex;
+  justify-content: space-between;
+
+  input {
+    width: 170px;
+  }
+}
+
+.formButton {
+  button {
+    margin-top: 15px;
+    width: 400px;
+    height: 45px;
+    background-color: $redColor;
+    color: white;
+    outline: none;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: $primaryColor;
+    transition: 0.3s;
+  }
+
+  button:disabled {
+    opacity: 0.5;
+  }
+}
+
+.clearButton {
+  width: 400px;
+  text-align: center;
+  margin-top: 10px;
+  a {
+    font-size: 16px;
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+  }
+}
